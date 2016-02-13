@@ -34,6 +34,7 @@ public class DBConnection {
 		String mongoDBName = System.getenv("MONGODB_DATABASE");
 		
 		System.out.println("****");
+		System.out.println("The name key in the service metadata field gets prepended to the following env variables:");
 		System.out.println("MONGODB_SERVICE_HOST: " + mongoHost);
 		System.out.println("MONGODB_SERVICE_PORT: " + mongoPort);
 		System.out.println("MONGODB_SERVICE_USER: " + mongoUser);
