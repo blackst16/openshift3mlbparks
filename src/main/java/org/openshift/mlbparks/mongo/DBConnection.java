@@ -38,14 +38,15 @@ public class DBConnection {
 		System.out.println("As an example, MONGODB is prepended to _SERVICE_HOST");
 		System.out.println("MONGODB_SERVICE_HOST: " + mongoHost);
 		System.out.println("MONGODB_SERVICE_PORT: " + mongoPort);
-		System.out.println("MONGODB_SERVICE_USER: " + mongoUser);
-		System.out.println("MONGODB_SERVICE_PASSWORD: " + mongoPassword);
-		System.out.println("MONGODB_SERVICE_DATABASE: " + mongoDBName);
-		System.out.println("Related services:");
+		System.out.println("Other related services:");
 		System.out.println("mlbparks-ping: " + System.getenv("MLBPARKS_PING_SERVICE_HOST") + 
 		":" + System.getenv("MLBPARKS_PING_SERVICE_PORT"));
 		System.out.println("mlbparks-http: " + System.getenv("MLBPARKS_HTTP_SERVICE_HOST") +
 		":" + System.getenv("MLBPARKS_HTTP_SERVICE_PORT"));
+		System.out.println("The following env variables were created from template parameters.");
+                System.out.println("MONGODB_SERVICE_USER: " + mongoUser);
+		System.out.println("MONGODB_SERVICE_PASSWORD: " + mongoPassword);
+		System.out.println("MONGODB_SERVICE_DATABASE: " + mongoDBName);
 		System.out.println("****");
 
 		// Check if we are using a mongoDB template or mongodb RHEL 7 image
