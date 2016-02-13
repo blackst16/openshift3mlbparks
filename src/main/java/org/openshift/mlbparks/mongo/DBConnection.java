@@ -32,6 +32,12 @@ public class DBConnection {
 		String mongoUser = System.getenv("MONGODB_USER");
 		String mongoPassword = System.getenv("MONGODB_PASSWORD");
 		String mongoDBName = System.getenv("MONGODB_DATABASE");
+		
+		System.out.println("****");
+		System.out.println("MONGODB_SERVICE_HOST: " + mongoHost);
+		System.out.println("MONGODB_SERVICE_PORT: " + mongoPort);
+		System.out.println("****");
+
 		// Check if we are using a mongoDB template or mongodb RHEL 7 image
 		if (mongoHost == null) {
 			mongoHost = System.getenv("MONGODB_24_RHEL7_SERVICE_HOST");
