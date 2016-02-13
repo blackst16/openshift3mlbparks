@@ -1,5 +1,10 @@
 # Sample application for OpenShift 3
 
+The source code has been modified with print statements to show how an application can discover kubernetes services.
+See src/main/java/org/openshift/mlbparks/mongo/DBConnection.java for details.
+
+Bob Kozdemba
+
 This sample application will create and deploy a JBoss EAP application server as well as a MongoDB database.  The sample application will display a map and perform geospatial queries to populate the map with all Major League Baseball stadiums in the United States.
 
 
