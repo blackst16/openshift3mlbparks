@@ -34,14 +34,15 @@ public class DBConnection {
 		String mongoDBName = System.getenv("MONGODB_DATABASE");
 		
 		System.out.println("****");
-		System.out.println("The name key in the service metadata field gets prepended to the following env variables:");
+		System.out.println("The "name:" key in the service metadata field gets prepended to the following env variables:");
 		System.out.println("MONGODB_SERVICE_HOST: " + mongoHost);
 		System.out.println("MONGODB_SERVICE_PORT: " + mongoPort);
 		System.out.println("MONGODB_SERVICE_USER: " + mongoUser);
 		System.out.println("MONGODB_SERVICE_PASSWORD: " + mongoPassword);
 		System.out.println("MONGODB_SERVICE_DATABASE: " + mongoDBName);
 		System.out.println("Related services:");
-		System.out.println("mlbparks-ping:" + System.getenv("MLBPARKS_PING_SERVICE_HOST"));
+		System.out.println("mlbparks-ping: " + System.getenv("MLBPARKS_PING_SERVICE_HOST"));
+		System.out.println("mlbparks-http: " + System.getenv("MLBPARKS_HTTP_SERVICE_HOST"));
 		System.out.println("****");
 
 		// Check if we are using a mongoDB template or mongodb RHEL 7 image
