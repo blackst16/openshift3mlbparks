@@ -22,6 +22,6 @@ $ oc scale --replicas=3 rc mlbparks-1
 Load the template with cluster-admin user:
 
 ````
-# oc create -f https://raw.githubusercontent.com/gshipley/openshift3mlbparks/master/mlbparks-template.json -n openshift
+# oc create -f https://raw.githubusercontent.com/bkoz/openshift3mlbparks/master/mlbparks-template.json -n openshift
 ````
 
