@@ -36,6 +36,9 @@ public class DBConnection {
 		System.out.println("****");
 		System.out.println("MONGODB_SERVICE_HOST: " + mongoHost);
 		System.out.println("MONGODB_SERVICE_PORT: " + mongoPort);
+		System.out.println("MONGODB_SERVICE_USER: " + mongoUser);
+		System.out.println("MONGODB_SERVICE_PASSWORD: " + mongoPassword);
+		System.out.println("MONGODB_SERVICE_DATABASE: " + mongoDBName);
 		System.out.println("****");
 
 		// Check if we are using a mongoDB template or mongodb RHEL 7 image
