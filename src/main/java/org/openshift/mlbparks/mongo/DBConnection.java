@@ -34,7 +34,8 @@ public class DBConnection {
 		String mongoDBName = System.getenv("MONGODB_DATABASE");
 		
 		System.out.println("****");
-		System.out.println("The \"name:\" key in the service metadata field gets prepended to the following env variables:");
+		System.out.println("The service name is used to construct kubernetes env variables.");
+		System.out.println("As an example, MONGODB is prepended to _SERVICE_HOST");
 		System.out.println("MONGODB_SERVICE_HOST: " + mongoHost);
 		System.out.println("MONGODB_SERVICE_PORT: " + mongoPort);
 		System.out.println("MONGODB_SERVICE_USER: " + mongoUser);
