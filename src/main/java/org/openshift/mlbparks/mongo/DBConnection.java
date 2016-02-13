@@ -41,7 +41,7 @@ public class DBConnection {
 		System.out.println("MONGODB_SERVICE_PASSWORD: " + mongoPassword);
 		System.out.println("MONGODB_SERVICE_DATABASE: " + mongoDBName);
 		System.out.println("Related services:");
-		System.out.println("mlbparks-ping:" + System.getenv("MLBPARKS-PING_SERVICE_HOST"));
+		System.out.println("mlbparks-ping:" + System.getenv("MLBPARKS_PING_SERVICE_HOST"));
 		System.out.println("****");
 
 		// Check if we are using a mongoDB template or mongodb RHEL 7 image
